@@ -1,0 +1,18 @@
+Hooks dont't work in class components
+
+Must call in top level
+
+Don't call hooks from regular JS Functions, in react --- don't call -- inside loops conditions, nested Functions 
+
+// useState --- state is isolated ( it will not merge automatically ) -- replace the state
+-- If we won't mention in useState() --- takes as undefined by default
+
+// useEffect ---- Must pass 2nd argument -- ( [] ) -- otherwise when making api calls it will done infinite times
+
+componentDidMount() -- useEffect, componentDidUpdate() -- dependency Array
+componentWillUmount() -- giving the return callback function in useEffect
+
+
+// useReducer --- same as redux functionality --- dealing with more complex state changes in react
+
+// useMemo --- memorized value
